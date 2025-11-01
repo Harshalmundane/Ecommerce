@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import type React from "react"
-import { Eye, EyeOff, Mail, Lock, User, Sparkles, ArrowRight, Check, Shield, Facebook } from "lucide-react"
+import { Eye, EyeOff, Mail, Lock, User, Sparkles, ArrowRight, Check, Shield } from "lucide-react"
 
 export default function SignupPage() {
   const [form, setForm] = useState({ name: "", email: "", password: "", role: "user" })

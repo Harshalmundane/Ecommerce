@@ -13,10 +13,11 @@ import {
   Shield,
   RotateCcw,
   Headphones,
+  
   Tag,
   Zap,
 } from "lucide-react"
-
+import mainImage from '../../public/img/modern-shopping-illustration.png.png'
 async function getProducts() {
   try {
     const res = await fetch("/api/products", { cache: "no-store" })
@@ -260,13 +261,14 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="relative">
-              <img
-                src="./public/modern-shopping-illustration.png.png"
-                alt="Shopping illustration"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
-            </div>
+          <div className="relative">
+  <img
+    src="/modern-shopping-illustration.png.png"
+    alt="Shopping illustration"
+    className="w-120 h-auto rounded-2xl shadow-2xl mx-auto"
+  />
+</div>
+
           </div>
         </div>
       </div>
